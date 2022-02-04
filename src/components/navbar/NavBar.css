@@ -1,0 +1,40 @@
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-hitman{
+    height: 11%;
+    width: 16%;
+    font-size: 43px;
+    margin: 15px;
+    background-color: #FA0000;
+    text-align: center;
+}
+
+.logo-hitman{
+    width: 27%;
+    margin-left: 27%;
+}
+
+/* .account-and-contact-contener{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+} */
+
+.account, .contact{
+    width: 11%;
+    height: 11%;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-bottom: auto;
+    background-color: red;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.account-title, .contact-title{
+    text-decoration: none;
+}
