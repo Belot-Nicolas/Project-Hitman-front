@@ -1,0 +1,27 @@
+.Cards {
+    margin-bottom: 5vh;
+}
+.img-character{
+    width: 220px;
+    
+}
+
+.card-name{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    border-bottom: solid;
+    border-right: solid;
+    border-left: solid;
+    border-color: red;
+    margin-top: -4px
+}
+
+.card-name h3{
+    font-size: 20px;
+    margin-left: auto;
+}
+
+.cible{
+    width: 6vh;
+}

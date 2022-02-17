@@ -1,40 +1,48 @@
-.NavBar{
+.head-navbar{
     display: flex;
     justify-content: space-between;
+    background-color: #A1A1A1;
+    height: 75px;
 }
 
 .title-hitman{
-    height: 11%;
+    height: 60%;
     width: 16%;
-    font-size: 43px;
+    font-size: 4vh;
     margin: 15px;
     background-color: #FA0000;
     text-align: center;
 }
 
 .logo-hitman{
-    width: 27%;
-    margin-left: 27%;
+    width: 18%;
+    margin-left: 64%;
 }
-
-/* .account-and-contact-contener{
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-} */
 
 .account, .contact{
     width: 11%;
-    height: 11%;
-    font-size: 25px;
+    height: 40%;
+    font-size: 3vh;
     margin-top: 2%;
-    margin-bottom: auto;
-    background-color: red;
     text-align: center;
     text-decoration: none;
     color: black;
 }
 
-.account-title, .contact-title{
-    text-decoration: none;
+.account span, .contact span{
+    color: #FA0000;
+}  
+
+.contact {
+    margin-right: 5%;
+}
+
+.account:hover, .contact:hover{
+    width: 11%;
+    height: 40%;
+    background-color: red;
+}
+
+.account span:hover, .contact span:hover{
+    color: black;
 }
