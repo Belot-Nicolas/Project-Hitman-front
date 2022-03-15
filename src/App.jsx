@@ -1,14 +1,19 @@
-import { Routes, Route} from 'react-router-dom';
-import Home from './pages/Home';
-import Characters from './components/characters/Characters';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import PageCharacter from "./pages/PageCharacter";
+import Contact from "./pages/Contact";
+import Account from "./pages/Account"
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-     <Routes>
-       <Route path ="/" element={<Home />} />
-     </Routes>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/character/:id" element={<PageCharacter />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/compte" element={<Account />} />
+      </Routes>
     </div>
   );
 }

@@ -19,7 +19,7 @@ const NavBar = () => {
           </NavLink>
 
           <div className='account'>
-            <NavLink to='/account' style={{ textDecoration: 'none' }}>
+            <NavLink to='/compte' style={{ textDecoration: 'none' }}>
             <span >C O M P T E</span>
             </NavLink>
           </div>

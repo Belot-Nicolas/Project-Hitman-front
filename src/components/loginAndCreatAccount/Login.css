@@ -1,0 +1,22 @@
+.Login{
+    text-align: center;
+}
+
+.Login label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.Login input{
+    width: 30vw;
+    height: 4vh;
+    font-size: 20px;
+    color: red;
+}
+
+.Login button {
+    width: 6vw;
+    height: 4vh;
+    margin-top: 5vh;
+}

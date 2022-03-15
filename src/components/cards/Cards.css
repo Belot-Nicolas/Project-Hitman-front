@@ -1,27 +1,32 @@
 .Cards {
-    margin-bottom: 5vh;
-}
-.img-character{
-    width: 220px;
-    
+  margin-bottom: 5vh;
 }
 
-.card-name{
-    display: flex;
-    align-items: center;
-    height: 7vh;
-    border-bottom: solid;
-    border-right: solid;
-    border-left: solid;
-    border-color: red;
-    margin-top: -4px
+.card {
+  width: 100%;
+  height: 100%;
 }
 
-.card-name h3{
-    font-size: 20px;
-    margin-left: auto;
+.img-character {
+  width: 220px;
 }
 
-.cible{
-    width: 6vh;
+.card-name {
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  border-bottom: solid;
+  border-right: solid;
+  border-left: solid;
+  border-color: red;
+  margin-top: -4px;
+}
+
+.card-name h3 {
+  font-size: 20px;
+  margin-left: auto;
+}
+
+.cible {
+  width: 6vh;
 }
