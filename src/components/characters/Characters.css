@@ -1,8 +1,12 @@
+.Card-characters{
+    margin-top: 1vh;
+}
+
 .cardList-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 18vh;
+    margin-left: 6vh;
     margin-top: 10vh;
 }

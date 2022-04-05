@@ -1,18 +1,18 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Cards.css";
 
-const Cards = ({ card, image }) => {
-  const params = useParams();
+const Cards = ({ url,card, image, activeCard }) => {
   return (
     <div className="Cards">
       <div className="card">
         <div className="card_face">
-        <Link to={{pathname: `/character/${card.id}`}} >
+        <Link to={{pathname: `/${url}/${card.id}`}} >
            <img
             className="img-character"
             src={card.image}
             alt={card.name}
+            onClick={activeCard}
           />
           </Link>
           <div className="card-name">

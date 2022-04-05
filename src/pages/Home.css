@@ -1,13 +1,3 @@
-.characters-and-misison{
+.page-home{
     display: flex;
-    justify-content: space-around;
-    margin-top: 4%;
-}
-
-.characters button, .mission button{
-    background-color: red;
-    border: none;
-    width: 230px;
-    height: 36px;
-    font-size: 23px;
 }

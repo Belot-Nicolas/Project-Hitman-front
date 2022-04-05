@@ -3,12 +3,12 @@ import { useFormik } from 'formik';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Login.css'
-// import { useUser } from '../../contexts/UserProvider';
+import { useUser } from '../../contexts/UserProvider';
 
 const Login = () => {
   const [error, setError] = useState(null);
   const navigator = useNavigate();
-//   const { setUser } = useUser();
+  const { setUser } = useUser();
 
   const formik = useFormik({
     initialValues: {
@@ -30,19 +30,19 @@ const Login = () => {
 
       return errors;
     },
-    // onSubmit: (values) => {
-    //   axios
-    //     .post(`${process.env.REACT_APP_API_URL}/users/login`, values)
-    //     .then(({ data: { credentials } }) => {
-    //     //   setUser({
-    //     //     token: credentials,
-    //     //   });
-    //       navigator('/');
-    //     })
-    //     .catch(({ response: { data: { message } } }) => {
-    //       setError(message);
-    //     });
-    // },
+    onSubmit: (values) => {
+      axios
+        .post(`${process.env.REACT_APP_API_URL}/users/login`, values)
+        .then(({ data: { credentials } }) => {
+          setUser({
+            token: credentials,
+          });
+          navigator('/');
+        })
+        .catch(({ response: { data: { message } } }) => {
+          setError(message);
+        });
+    },
   });
 
   return (

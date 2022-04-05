@@ -1,13 +1,22 @@
 .characters-and-misison{
     display: flex;
-    justify-content: space-around;
     margin-top: 4%;
+    flex-direction: column;
 }
 
-.characters button, .mission button{
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+    width: 100%;
+}
+
+.button-container button{
     background-color: red;
     border: none;
-    width: 230px;
+    width: 17%;
     height: 36px;
     font-size: 23px;
+
 }

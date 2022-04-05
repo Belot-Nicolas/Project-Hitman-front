@@ -2,13 +2,13 @@ import { useFormik } from "formik";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-// import { useUser } from '../../contexts/UserProvider';
+import { useUser } from '../../contexts/UserProvider';
 import './CreatAccount.css';
 
 const CreatAccount = () => {
   const navigator = useNavigate();
   const [error, setError] = useState("");
-  //   const { setUser } = useUser();
+    const { setUser } = useUser();
 
   const formik = useFormik({
     initialValues: {
@@ -43,19 +43,19 @@ const CreatAccount = () => {
 
       return errors;
     },
-    // onSubmit: (values) => {
-    //   axios
-    //     .post(`${process.env.REACT_APP_API_URL}/users/`, values)
-    //     .then(({ data: { credential } }) => {
-    //       setUser({
-    //         token: credential,
-    //       });
-    //       navigator('/');
-    //     })
-    //     .catch((err) => {
-    //       setError(err.response.data.message);
-    //     });
-    // },
+    onSubmit: (values) => {
+      axios
+        .post(`${process.env.REACT_APP_API_URL}/users/`, values)
+        .then(({ data: { credential } }) => {
+          setUser({
+            token: credential,
+          });
+          navigator('/');
+        })
+        .catch((err) => {
+          setError(err.response.data.message);
+        });
+    },
   });
 
   return (

@@ -6,28 +6,28 @@ import ButtonCharAndMis from "../components/buttoncharacterAndMission/ButtonChar
 import DetailCharacter from "../components/characters/DetailCharacter";
 import "./PageCharacters.css"
 
-const CharacterPage = () => {
-  const [characterDetail, setCharacterDetail] = useState([]);
+const PageMission = () => {
+  const [missionDetail, setMissionDetail] = useState([]);
   const params = useParams();
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/characters/${params.id}`)
+      .get(`http://localhost:8000/api/missions/${params.id}`)
       .then((res) => res.data)
-      .then((data) => setCharacterDetail(data));
+      .then((data) => setMissionDetail(data));
   }, [params.id]);
 
-  console.log(characterDetail);
+console.log(missionDetail);
 
   return (
     <div className="CharacterPage">
       <NavBar />
       <ButtonCharAndMis />
       <div className="detailCharacter">
-       <DetailCharacter character={characterDetail}/>
+       <DetailCharacter character={missionDetail}/>
       </div>
     </div>
   );
 };
 
-export default CharacterPage;
+export default PageMission;

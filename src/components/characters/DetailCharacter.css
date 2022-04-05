@@ -9,6 +9,12 @@
   font-size: 26px;
 }
 
+.imageAndDescription img {
+  width: 70vw;
+  height: 50vh;
+  margin-left: 2vw;
+}
+
 .description {
   margin-left: 5em;
   margin-right: 5em;

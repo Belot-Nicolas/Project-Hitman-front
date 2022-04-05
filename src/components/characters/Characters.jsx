@@ -4,7 +4,7 @@ import Cards from '../cards/Cards';
 import './Characters.css'
 import Cible from '../../assets/Cible.png'
 
-const Characters = () => {
+const Characters = ({activeChar}) => {
   const [listsCharacters, setListsCharacters] = useState([])
  
 
@@ -23,7 +23,7 @@ const Characters = () => {
         {listsCharacters &&
         listsCharacters.map((card) =>
         <div key={card.id}>
-            <Cards card={card} image={Cible} />
+            <Cards url={'character'} card={card} image={Cible} activeCard={activeChar} />
         </div> 
         )}
       </div>
