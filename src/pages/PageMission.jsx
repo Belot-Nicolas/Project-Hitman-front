@@ -17,7 +17,6 @@ const PageMission = () => {
       .then((data) => setMissionDetail(data));
   }, [params.id]);
 
-console.log(missionDetail);
 
   return (
     <div className="CharacterPage">

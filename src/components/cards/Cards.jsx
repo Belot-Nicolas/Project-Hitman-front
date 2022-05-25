@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Cards.css";
 
-const Cards = ({ url,card, image, activeCard }) => {
+const Cards = ({ url,card, logo, activeCard }) => {
+  console.log(card.image)
   return (
     <div className="Cards">
       <div className="card">
@@ -10,13 +11,13 @@ const Cards = ({ url,card, image, activeCard }) => {
         <Link to={{pathname: `/${url}/${card.id}`}} >
            <img
             className="img-character"
-            src={card.image}
+            src={`${process.env.REACT_APP_API_PIC}/${card.image}`}
             alt={card.name}
             onClick={activeCard}
           />
           </Link>
           <div className="card-name">
-            <img className="cible" src={image} alt={card.name} /> 
+            <img className="cible" src={logo} alt={card.name} /> 
             <h3>{card.name}</h3>
           </div>
         </div>

@@ -32,12 +32,12 @@ const Login = () => {
     },
     onSubmit: (values) => {
       axios
-        .post(`${process.env.REACT_APP_API_URL}/users/login`, values)
+        .post(`${process.env.REACT_APP_API_URL}/auth`, values)
         .then(({ data: { credentials } }) => {
           setUser({
             token: credentials,
           });
-          navigator('/');
+          navigator('/admin');
         })
         .catch(({ response: { data: { message } } }) => {
           setError(message);

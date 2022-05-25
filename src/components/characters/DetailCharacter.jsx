@@ -3,10 +3,12 @@ import './DetailCharacter.css'
 
 const DetailCharacter = ({ character }) => {
   return (
-    <div className="DetailCharacter">
+    <div className="DetailCharacter" data-aos="zoom-in" >
 
       <div className="imageAndDescription">
-        <img src={character.image} alt={character.name} />
+        <img 
+            src={`${process.env.REACT_APP_API_PIC}/${character.image}`}
+            alt={character.name} />
         <div className="description">
           <span>{character.description}</span>
         </div>

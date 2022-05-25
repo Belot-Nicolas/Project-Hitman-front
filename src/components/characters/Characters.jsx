@@ -23,7 +23,7 @@ const Characters = ({activeChar}) => {
         {listsCharacters &&
         listsCharacters.map((card) =>
         <div key={card.id}>
-            <Cards url={'character'} card={card} image={Cible} activeCard={activeChar} />
+            <Cards url={'character'} card={card} logo={Cible} activeCard={activeChar} />
         </div> 
         )}
       </div>

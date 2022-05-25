@@ -10,7 +10,7 @@ const Home = () => {
       <NavBar />
       <ButtonCharAndMis />
 
-      <div className="page-home">
+      {/* <div className="page-home">
         <img src={Img47} alt="Agent 47" />
         <span>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
@@ -18,7 +18,7 @@ const Home = () => {
           eaque inventore incidunt, ab voluptas, iste, earum aliquid culpa
           laboriosam animi totam nihil.
         </span>
-      </div>
+      </div> */}
     </div>
   );
 };

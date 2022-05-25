@@ -23,7 +23,7 @@ const CharacterPage = () => {
     <div className="CharacterPage">
       <NavBar />
       <ButtonCharAndMis />
-      <div className="detailCharacter">
+      <div className="detailCharacter" >
        <DetailCharacter character={characterDetail}/>
       </div>
     </div>

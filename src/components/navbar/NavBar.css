@@ -29,6 +29,39 @@
     color: black;
 }
 
+.discoAndProfil{
+    display: flex;
+    justify-content: space-between;
+    width: 23vw;
+    margin-top: 4vh;
+    font-size: 3vh;
+    text-decoration: none;
+}
+
+.buttonDisconnect{
+    color: red;
+    background: none;
+    border: none;
+    font-size: 2vh;
+}
+.buttonDisconnect:hover{
+    background-color: #FA0000;
+}
+
+.discoAndProfil span{
+    color: #FA0000;
+}
+.profil:hover{
+    background-color: #FA0000;
+}
+.profil span:hover, .buttonDisconnect:hover {
+    color: black;
+}
+
+.profil{
+    margin-left: 2vw;
+}
+
 .account span, .contact span{
     color: #FA0000;
 }  
@@ -38,8 +71,6 @@
 }
 
 .account:hover, .contact:hover{
-    width: 11%;
-    height: 40%;
     background-color: red;
 }
 

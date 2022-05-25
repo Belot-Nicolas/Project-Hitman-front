@@ -97,7 +97,7 @@ const CreatAccount = () => {
             <div className="error">{formik.errors.email}</div>
           ) : null}
           <input
-            id="email"
+            id="emailCreatAccount"
             name="email"
             type="email"
             placeholder="Email"
@@ -111,7 +111,7 @@ const CreatAccount = () => {
             <div className="error">{formik.errors.password}</div>
           ) : null}
           <input
-            id="password"
+            id="passwordCreatAccount"
             name="password"
             type="password"
             placeholder="Mot de passe"

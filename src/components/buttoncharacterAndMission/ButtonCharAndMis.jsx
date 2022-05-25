@@ -44,13 +44,13 @@ const ButtonCharAndMis = () => {
             <button  onClick={activeCharacter}>P E R S O N N A G E</button>
             <button  onClick={activeMission}>M I S S I O N</button>
           </div>
-        <div className="characters">
+        <div className="characters" >
           
-            {charactersActive ? <Characters activeChar={activeCharacter} /> : null}
+            {charactersActive ? <div data-aos="zoom-in"> <Characters activeChar={activeCharacter} /> </div>: null}
         </div>
 
-        <div className="mission">
-          {missionActive ? <Mission activeMission={activeMission} /> : null}
+        <div className="mission" data-aos="zoom-in">
+          {missionActive ? <div data-aos="zoom-in"> <Mission activeMission={activeMission} /> </div> : null}
         </div>
       </div>
     </div>

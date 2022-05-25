@@ -9,7 +9,7 @@ const Mission = ({activeMission}) => {
 
   useEffect(() => {
     axios
-    .get("http://localhost:8000/api/missions/")
+    .get(`${process.env.REACT_APP_API_URL}/missions`)
     .then((res) => res.data)
     .then((data) => setListsMission(data))
 }, []);
@@ -21,7 +21,7 @@ const Mission = ({activeMission}) => {
         {listsMission &&
         listsMission.map((card) =>
         <div key={card.id}>
-            <Cards url={'mission'} card={card} image={Fleche} activeCard={activeMission}/>
+            <Cards url={'mission'} card={card} logo={Fleche} activeCard={activeMission}/>
         </div> 
         )}
       </div>
