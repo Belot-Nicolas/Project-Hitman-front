@@ -13,7 +13,6 @@ const Characters = ({activeChar}) => {
     .get("http://localhost:8000/api/characters/")
     .then((res) => res.data)
     .then((data) => setListsCharacters(data))
-    // console.log(listsCharacters);
 }, []);
 
   return (

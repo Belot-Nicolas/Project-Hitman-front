@@ -28,6 +28,8 @@ function App() {
           <Route path="/compte" element={<Account />} />
           <Route path="/admin" element ={<AdminRoutes />}>
             <Route index element={<AdminPanel/>}/>
+            <Route path="/admin/putCharacter/:id" />
+            <Route path="/admin/putMission/:id" />
           </Route>
         </Routes>
       </UserProvider>
