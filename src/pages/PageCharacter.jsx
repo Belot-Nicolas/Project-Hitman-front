@@ -12,12 +12,11 @@ const CharacterPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/characters/${params.id}`)
+      .get(`${process.env.REACT_APP_API_URL}/characters/${params.id}`)
       .then((res) => res.data)
       .then((data) => setCharacterDetail(data));
   }, [params.id]);
 
-  console.log(characterDetail);
 
   return (
     <div className="CharacterPage">

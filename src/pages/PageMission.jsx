@@ -12,7 +12,7 @@ const PageMission = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/missions/${params.id}`)
+      .get(`${process.env.REACT_APP_API_URL}/missions/${params.id}`)
       .then((res) => res.data)
       .then((data) => setMissionDetail(data));
   }, [params.id]);
